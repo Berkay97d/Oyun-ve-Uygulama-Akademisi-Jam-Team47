@@ -371,7 +371,6 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  _spriteRenderer: {fileID: 469703590}
   speed: 8
   jumpingPower: 25
 --- !u!70 &469703595
@@ -2295,9 +2294,8 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  _spriteRenderer: {fileID: 1442412590}
   speed: 8
-  jumpingPower: 12
+  jumpingPower: 16
 --- !u!70 &1442412593
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2307,7 +2305,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1442412588}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 26ae760f38691c74394658cf05d7404c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2358,7 +2356,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1442412595
 MonoBehaviour:

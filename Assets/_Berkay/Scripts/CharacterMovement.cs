@@ -10,7 +10,6 @@ namespace _Berkay.Scripts
         [SerializeField] private Transform _groundCheck;
         [SerializeField] private float _groundCheckRadius;
         [SerializeField] private LayerMask _groundLayer;
-        [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private float speed;
         [SerializeField] private float jumpingPower;
         
@@ -61,7 +60,7 @@ namespace _Berkay.Scripts
             if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
             {
                 isFacingRight = !isFacingRight;
-                _spriteRenderer.flipX = !isFacingRight;
+                transform.rotation = Quaternion.Euler(isFacingRight ? Vector3.zero : new Vector3(0, 180, 0));
             }
         }
 
