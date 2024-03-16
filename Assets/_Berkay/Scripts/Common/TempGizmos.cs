@@ -1,6 +1,6 @@
 ﻿#if UNITY_EDITOR
 using System;
-//using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -36,7 +36,7 @@ namespace _Berkay.Scripts.Common
             
             behaviour.onDrawGizmos += Draw;
 
-            //await UniTask.WaitForSeconds(duration);
+            await UniTask.WaitForSeconds(duration);
 
             behaviour.onDrawGizmos -= Draw;
             
@@ -53,7 +53,7 @@ namespace _Berkay.Scripts.Common
             
             behaviour.onDrawGizmos += Draw;
 
-            //await UniTask.WaitForSeconds(duration);
+            await UniTask.WaitForSeconds(duration);
 
             behaviour.onDrawGizmos -= Draw;
             
@@ -75,7 +75,7 @@ namespace _Berkay.Scripts.Common
             
             behaviour.onDrawGizmos += Draw;
 
-            //await UniTask.WaitForSeconds(duration);
+            await UniTask.WaitForSeconds(duration);
 
             behaviour.onDrawGizmos -= Draw;
             

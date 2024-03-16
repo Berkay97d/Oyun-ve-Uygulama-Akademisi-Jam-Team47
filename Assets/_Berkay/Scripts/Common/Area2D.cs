@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace _Berkay.Scripts.Common
@@ -15,7 +16,7 @@ namespace _Berkay.Scripts.Common
         
         
         public abstract T Overlap<T>();
-        public abstract IEnumerable OverlapAll<T>();
+        public abstract IEnumerable<T> OverlapAll<T>();
         public abstract void DrawTempGizmos(float duration, Color color);
         
 

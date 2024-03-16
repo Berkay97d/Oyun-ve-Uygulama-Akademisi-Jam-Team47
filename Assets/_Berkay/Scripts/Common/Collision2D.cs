@@ -44,7 +44,7 @@ namespace _Berkay.Scripts.Common
             return default;
         }
 
-        public static IEnumerable OverlapCircleAll<T>(Vector2 position, float radius, int layerMask)
+        public static IEnumerable<T> OverlapCircleAll<T>(Vector2 position, float radius, int layerMask)
         {
             var count = Physics2D.OverlapCircleNonAlloc(position, radius, COLLIDER_BUFFER, layerMask);
 

@@ -1,6 +1,5 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 using UnityEngine;
-
 namespace _Berkay.Scripts.Common
 {
     public class CircleArea2D : Area2D
@@ -23,7 +22,7 @@ namespace _Berkay.Scripts.Common
             return Collision2D.OverlapCircle<T>(GetPosition(), GetRadius(), GetLayerMask());
         }
 
-        public override IEnumerable OverlapAll<T>()
+        public override IEnumerable<T> OverlapAll<T>()
         {
             return Collision2D.OverlapCircleAll<T>(GetPosition(), GetRadius(), GetLayerMask());
         }
