@@ -16,15 +16,17 @@ namespace _Berkay.Scripts
         private float horizontal;
         private bool isFacingRight = true;
         private Dasher m_dasher;
-
+        private PlayerHealthSystem m_healthSystem;
 
         private void Awake()
         {
+            m_healthSystem = GetComponent<PlayerHealthSystem>();
             m_dasher = GetComponent<Dasher>();
         }
 
         private void Update()
         {
+            if (m_healthSystem.GetIsDead()) return;
             if (m_dasher.GetIsDashing()) return;
             
             horizontal = Input.GetAxisRaw("Horizontal");   
@@ -44,6 +46,12 @@ namespace _Berkay.Scripts
 
         private void FixedUpdate()
         {
+            if (m_healthSystem.GetIsDead())
+            {
+                _rb.velocity = new Vector2(0, _rb.velocity.y);
+                return;
+            }
+            
             if (m_dasher.GetIsDashing())
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, 0);
