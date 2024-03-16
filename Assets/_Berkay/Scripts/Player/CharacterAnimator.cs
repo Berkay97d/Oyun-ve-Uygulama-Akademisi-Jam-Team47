@@ -8,7 +8,8 @@ namespace _Berkay.Scripts
     public class CharacterAnimator : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
-
+        [SerializeField] private Animator[] _dashAnimators;
+        
         private CharacterMovement m_characterMovement;
         private bool isMoving;
 
@@ -24,6 +25,10 @@ namespace _Berkay.Scripts
             CheckRun();
             CheckGrounded();
             CheckVerticalSpeed();
+            
+            CheckDashRun();
+            CheckDashGrounded();
+            CheckDashVerticalSpeed();
         }
 
         private IEnumerator CheckIsMoving()
@@ -67,6 +72,31 @@ namespace _Berkay.Scripts
         private void CheckVerticalSpeed()
         {
             _animator.SetFloat("velocityY", m_characterMovement.GetVerticalSpeed());
+        }
+
+        private void CheckDashRun()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                animator.SetBool("isMoving", isMoving);   
+            }
+        }
+
+        private void CheckDashGrounded()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                var isG = m_characterMovement.IsGrounded();
+                animator.SetBool("isGrounded",isG);
+            }   
+        }
+
+        private void CheckDashVerticalSpeed()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                animator.SetFloat("velocityY", m_characterMovement.GetVerticalSpeed());
+            }
         }
 
         

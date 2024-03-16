@@ -15,10 +15,18 @@ namespace _Berkay.Scripts
         
         private float horizontal;
         private bool isFacingRight = true;
-        
-        
+        private Dasher m_dasher;
+
+
+        private void Awake()
+        {
+            m_dasher = GetComponent<Dasher>();
+        }
+
         private void Update()
         {
+            if (m_dasher.GetIsDashing()) return;
+            
             horizontal = Input.GetAxisRaw("Horizontal");   
             
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
@@ -36,6 +44,12 @@ namespace _Berkay.Scripts
 
         private void FixedUpdate()
         {
+            if (m_dasher.GetIsDashing())
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, 0);
+                return;
+            }
+            
             if (IsGrounded())
             {
                 _rb.velocity = new Vector2(horizontal * speed, _rb.velocity.y);    
