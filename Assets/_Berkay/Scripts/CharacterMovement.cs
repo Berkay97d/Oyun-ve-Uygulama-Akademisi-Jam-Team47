@@ -17,10 +17,10 @@ namespace _Berkay.Scripts
         private bool isFacingRight = true;
         
         
-        void Update()
+        private void Update()
         {
-            horizontal = Input.GetAxisRaw("Horizontal");
-
+            horizontal = Input.GetAxisRaw("Horizontal");   
+            
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, jumpingPower);
