@@ -65,7 +65,6 @@ namespace _Berkay.Scripts
         private void CheckGrounded()
         {
             var isG = m_characterMovement.IsGrounded();
-            Debug.Log(isG);
             _animator.SetBool("isGrounded",isG);
         }
 

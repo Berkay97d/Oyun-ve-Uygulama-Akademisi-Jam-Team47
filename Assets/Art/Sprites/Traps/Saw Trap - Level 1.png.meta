@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8708e6a0566910f40aa1413237b1aefd
+guid: 9c8363e33bb730e43bc4d2be3c474547
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat-1-Stretching_0
+      name: Saw Trap - Level 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d470feac93c0298428e7b8fd0d585eed
-      internalID: 1074490298
+      spriteID: 3c61642ec0b762242a8d27c67cfa7509
+      internalID: 836751534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_1
+      name: Saw Trap - Level 1_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 64
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546be6bdb78c60049b77ac207646945f
-      internalID: -1007848216
+      spriteID: 9e1f02b2f524b5b47b389d2dcb15578f
+      internalID: -340057203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_2
+      name: Saw Trap - Level 1_2
       rect:
         serializedVersion: 2
-        x: 100
+        x: 128
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6ea03c143e90244abfc98e3c9a8f66c
-      internalID: -2021215491
+      spriteID: ed6ba53dfead6aa48bc88c9974b16087
+      internalID: -216876786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_3
+      name: Saw Trap - Level 1_3
       rect:
         serializedVersion: 2
-        x: 150
+        x: 192
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e8b9b5333666b4796f9c4c151e7dd3
-      internalID: 754460118
+      spriteID: dbbf55a8dc67bc74f858df58eac2191c
+      internalID: 118559713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_4
+      name: Saw Trap - Level 1_4
       rect:
         serializedVersion: 2
-        x: 200
+        x: 256
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4494dc163ff54f54cb82f56305fe9866
-      internalID: 1627900779
+      spriteID: 4900077d74c0baf41b0d209e31a1ad59
+      internalID: 1913329869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_5
+      name: Saw Trap - Level 1_5
       rect:
         serializedVersion: 2
-        x: 250
+        x: 320
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c575c902eb6868541a0a4c651448fc22
-      internalID: -514830834
+      spriteID: ec3d4ee1e7d7f2a4289827d728913d43
+      internalID: -966341280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_6
+      name: Saw Trap - Level 1_6
       rect:
         serializedVersion: 2
-        x: 300
+        x: 384
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41e2ca804d1d26746bf4a0d37297d32b
-      internalID: 1598277321
+      spriteID: 9b17d5cd732deb6459e4e2820c276913
+      internalID: -33114253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_7
+      name: Saw Trap - Level 1_7
       rect:
         serializedVersion: 2
-        x: 350
+        x: 448
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2eec87f167dd2947a57d06da6cbef79
-      internalID: -319680013
+      spriteID: bbefa7b97b5784547a3c420f6e4c1bcb
+      internalID: -1176498779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_8
+      name: Saw Trap - Level 1_8
       rect:
         serializedVersion: 2
-        x: 400
+        x: 512
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2e1370730a54c4a9a9e09747e66651
-      internalID: 626250573
+      spriteID: d0f87164701b5f14c9fee5614894a523
+      internalID: 836715206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_9
+      name: Saw Trap - Level 1_9
       rect:
         serializedVersion: 2
-        x: 450
+        x: 576
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f283d4d8c7d96be409aae4d36fe6c168
-      internalID: 2055048017
+      spriteID: 3276644b16e52804c9efe814c814b43f
+      internalID: -265456058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_10
+      name: Saw Trap - Level 1_10
       rect:
         serializedVersion: 2
-        x: 500
+        x: 640
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79dea3f160b1203479d32d5503139410
-      internalID: -1853771530
+      spriteID: 50c57d3d743129647be95e3d6ae80c4c
+      internalID: 2114549251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_11
+      name: Saw Trap - Level 1_11
       rect:
         serializedVersion: 2
-        x: 550
+        x: 704
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf62d31274b5f748a17b90542f72e17
-      internalID: 1467141586
+      spriteID: 6d7f479ea3cfd0245bebfdf06db75c30
+      internalID: 1970747387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-1-Stretching_12
+      name: Saw Trap - Level 1_12
       rect:
         serializedVersion: 2
-        x: 600
+        x: 768
         y: 0
-        width: 50
-        height: 50
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a944c66054ada7b4b95c5439cef33a3a
-      internalID: 1593201692
+      spriteID: f5ab8a4b87cecec46a0730cf51491fa2
+      internalID: 1271586016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw Trap - Level 1_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29130c3b4211a8c4baf3ce940d8349d1
+      internalID: 1755682281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw Trap - Level 1_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45225b790c97bd840819e66819710f50
+      internalID: 1761667893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw Trap - Level 1_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fb10b247581c847b91cd1bf6301031
+      internalID: -864194250
       vertices: []
       indices: 
       edges: []
@@ -393,19 +456,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cat-1-Stretching_0: 1074490298
-      Cat-1-Stretching_1: -1007848216
-      Cat-1-Stretching_10: -1853771530
-      Cat-1-Stretching_11: 1467141586
-      Cat-1-Stretching_12: 1593201692
-      Cat-1-Stretching_2: -2021215491
-      Cat-1-Stretching_3: 754460118
-      Cat-1-Stretching_4: 1627900779
-      Cat-1-Stretching_5: -514830834
-      Cat-1-Stretching_6: 1598277321
-      Cat-1-Stretching_7: -319680013
-      Cat-1-Stretching_8: 626250573
-      Cat-1-Stretching_9: 2055048017
+      Saw Trap - Level 1_0: 836751534
+      Saw Trap - Level 1_1: -340057203
+      Saw Trap - Level 1_10: 2114549251
+      Saw Trap - Level 1_11: 1970747387
+      Saw Trap - Level 1_12: 1271586016
+      Saw Trap - Level 1_13: 1755682281
+      Saw Trap - Level 1_14: 1761667893
+      Saw Trap - Level 1_15: -864194250
+      Saw Trap - Level 1_2: -216876786
+      Saw Trap - Level 1_3: 118559713
+      Saw Trap - Level 1_4: 1913329869
+      Saw Trap - Level 1_5: -966341280
+      Saw Trap - Level 1_6: -33114253
+      Saw Trap - Level 1_7: -1176498779
+      Saw Trap - Level 1_8: 836715206
+      Saw Trap - Level 1_9: -265456058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
