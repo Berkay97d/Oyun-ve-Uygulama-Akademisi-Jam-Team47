@@ -8,24 +8,45 @@ namespace _Berkay.Scripts
     public class CharacterAnimator : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
+        [SerializeField] private Animator[] _dashAnimators;
 
+        private PlayerHealthSystem m_playerHealthSystem;
         private CharacterMovement m_characterMovement;
         private bool isMoving;
 
         private void Start()
         {
             m_characterMovement = GetComponent<CharacterMovement>();
-         
+            m_playerHealthSystem = GetComponent<PlayerHealthSystem>();
+            
             StartCoroutine(CheckIsMoving());
+            
+            m_playerHealthSystem.OnDeath += OnDeath;
+        }
+
+        private void OnDestroy()
+        {
+            m_playerHealthSystem.OnDeath += OnDeath;
         }
 
         private void Update()
         {
+            if (m_playerHealthSystem.GetIsDead()) return;
+            
             CheckRun();
             CheckGrounded();
             CheckVerticalSpeed();
+            
+            CheckDashRun();
+            CheckDashGrounded();
+            CheckDashVerticalSpeed();
         }
 
+        private void OnDeath()
+        {
+            _animator.SetTrigger("onDeath");
+        }
+        
         private IEnumerator CheckIsMoving()
         {
             while (true)
@@ -60,13 +81,37 @@ namespace _Berkay.Scripts
         private void CheckGrounded()
         {
             var isG = m_characterMovement.IsGrounded();
-            Debug.Log(isG);
             _animator.SetBool("isGrounded",isG);
         }
 
         private void CheckVerticalSpeed()
         {
             _animator.SetFloat("velocityY", m_characterMovement.GetVerticalSpeed());
+        }
+
+        private void CheckDashRun()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                animator.SetBool("isMoving", isMoving);   
+            }
+        }
+
+        private void CheckDashGrounded()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                var isG = m_characterMovement.IsGrounded();
+                animator.SetBool("isGrounded",isG);
+            }   
+        }
+
+        private void CheckDashVerticalSpeed()
+        {
+            foreach (var animator in _dashAnimators)
+            {
+                animator.SetFloat("velocityY", m_characterMovement.GetVerticalSpeed());
+            }
         }
 
         

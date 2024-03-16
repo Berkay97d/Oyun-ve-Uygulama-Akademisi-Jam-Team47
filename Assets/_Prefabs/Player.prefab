@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 2826767102610695840}
-  nonGroundedSpeedReduceRatio: 3
+  nonGroundedSpeedReduceRatio: 2
   _groundCheck: {fileID: 1082567925551059001}
   _groundCheckRadius: 0.09
   _groundLayer:
