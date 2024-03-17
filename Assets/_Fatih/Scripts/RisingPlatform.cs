@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class RisingPlatform : MonoBehaviour
@@ -6,11 +7,19 @@ public class RisingPlatform : MonoBehaviour
     [SerializeField] GameObject platformStopper;
     bool triggeredStopper;
 
+    Vector3 firstPosition;
+
+    private void Start()
+    {
+        firstPosition = gameObject.transform.position;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == platformStopper)
         {
             triggeredStopper = true;
+            Invoke(nameof(PlatformPosResetter), 10f); 
         }
     }
 
@@ -21,4 +30,11 @@ public class RisingPlatform : MonoBehaviour
             gameObject.transform.position += new Vector3(0f, risingSpeed);
         }
     }
+
+    void PlatformPosResetter()
+    {
+        gameObject.transform.position = firstPosition;
+        triggeredStopper = false;
+    }
+
 }

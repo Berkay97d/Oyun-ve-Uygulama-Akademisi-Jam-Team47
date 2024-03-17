@@ -6,6 +6,6 @@ public class FollowPlayer : MonoBehaviour
 
     private void LateUpdate()
     {
-        this.gameObject.transform.position = _player.transform.position + new Vector3(0, 1.5f, -1f);
+        gameObject.transform.position = _player.transform.position + new Vector3(0f, 0f, -10f);
     }
 }
