@@ -21,12 +21,16 @@ namespace _Berkay.Scripts.Enemy
         [SerializeField] private float _fireWaitTime;
         [SerializeField] private BoxArea2D _fireArea;
         [SerializeField] private float _moveSpeed;
+        [SerializeField] private float _maxHealth;
 
+        private float m_currentHealth;
+        
         private Player m_player;
         private EnemyState m_enemyState = EnemyState.Idle;
         
         private void Start()
         {
+            m_currentHealth = _maxHealth;
             _enemySystem.OnPlayerDetected += OnPlayerDetected;
         }
 
@@ -110,6 +114,11 @@ namespace _Berkay.Scripts.Enemy
                 return;
             }
             transform.rotation = Quaternion.Euler(new Vector3(0,0, 0));
+        }
+
+        public void TakeDamage()
+        {
+            m_currentHealth--;
         }
     }
 }

@@ -9,8 +9,8 @@ namespace _Berkay.Scripts
         [SerializeField] private PlayerHealthSystem _healthSystem;
         [SerializeField] private Image _healthImage;
         [SerializeField] private Sprite[] healthSprites;
-        
-        
+
+        private Sprite full;
 
         private void Start()
         {
