@@ -176,6 +176,8 @@ MonoBehaviour:
   _fireWaitTime: 2.25
   _fireArea: {fileID: 2348620155804509338}
   _moveSpeed: 4
+  _maxHealth: 3
+  _renderer: {fileID: 0}
 --- !u!1 &4759372078281081090
 GameObject:
   m_ObjectHideFlags: 0

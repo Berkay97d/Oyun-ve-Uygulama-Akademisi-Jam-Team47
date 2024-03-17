@@ -6,18 +6,19 @@ namespace _Berkay.Scripts
 {
     public class PlayerAttacker : MonoBehaviour
     {
-        [SerializeField] private BoxArea2D attackArea;
+        [SerializeField] private CircleArea2D attackArea;
 
         public event Action OnPlayerAttack;
         
         private void Update()
         {
+            var enemies = attackArea.OverlapAll<Enemy.Enemy>();
+            
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 OnPlayerAttack?.Invoke();
 
-                var enemy = attackArea.Overlap<Enemy.Enemy>();
-                if (enemy)
+                foreach (var enemy in enemies)
                 {
                     enemy.TakeDamage();
                 }

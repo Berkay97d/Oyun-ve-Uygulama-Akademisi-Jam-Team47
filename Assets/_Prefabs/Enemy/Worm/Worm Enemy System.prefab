@@ -127,6 +127,8 @@ MonoBehaviour:
   _fireWaitTime: 2.25
   _fireArea: {fileID: 9198677728192482660}
   _moveSpeed: 2
+  _maxHealth: 3
+  _renderer: {fileID: 0}
 --- !u!114 &9198677728192482660
 MonoBehaviour:
   m_ObjectHideFlags: 0

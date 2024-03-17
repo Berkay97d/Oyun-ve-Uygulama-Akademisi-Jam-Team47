@@ -22,7 +22,9 @@ namespace _Berkay.Scripts.Enemy
         [SerializeField] private BoxArea2D _fireArea;
         [SerializeField] private float _moveSpeed;
         [SerializeField] private float _maxHealth;
-
+        [SerializeField] private SpriteRenderer _renderer;
+        
+        
         private float m_currentHealth;
         
         private Player m_player;
@@ -119,6 +121,16 @@ namespace _Berkay.Scripts.Enemy
         public void TakeDamage()
         {
             m_currentHealth--;
+            Debug.Log(m_currentHealth);
+            StartCoroutine(ShowTakeDamage());
+        }
+        
+        private IEnumerator ShowTakeDamage()
+        {
+            yield return new WaitForSeconds(.5f);
+            _renderer.color = Color.red;
+            yield return new WaitForSeconds(0.05f);
+            _renderer.color = Color.white;
         }
     }
 }
