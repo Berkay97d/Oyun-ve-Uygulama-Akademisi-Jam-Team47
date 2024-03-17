@@ -83,6 +83,7 @@ namespace _Berkay.Scripts.Enemy
             {
                 yield return null;
                 var direction = Vector3.Normalize(target.position - transform.position);
+                direction.y = 0;
                 transform.position += direction * (_moveSpeed * Time.deltaTime);
 
                 var playerInFireArea = _fireArea.Overlap<Player>();
