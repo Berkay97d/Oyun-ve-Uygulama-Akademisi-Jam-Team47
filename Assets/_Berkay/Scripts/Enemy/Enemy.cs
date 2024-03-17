@@ -56,33 +56,6 @@ namespace _Berkay.Scripts.Enemy
                 return;
             }
             
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                if (m_type == 1)
-                {
-                    isDead = true;
-                    animator.SetTrigger("dead");   
-                }
-            }
-            
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                if (m_type == 2)
-                {
-                    isDead = true;
-                    animator.SetTrigger("dead");   
-                }
-            }
-            
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                if (m_type == 3)
-                {
-                    isDead = true;
-                    animator.SetTrigger("dead");   
-                }
-            }
-            
             if (_enemySystem.GetPlayer() == null)
             {
                 return;
@@ -169,6 +142,31 @@ namespace _Berkay.Scripts.Enemy
             m_currentHealth--;
             Debug.Log(m_currentHealth);
             StartCoroutine(ShowTakeDamage());
+
+            if (m_currentHealth <= 0)
+            {
+                if (m_type == 1)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            
+            
+            
+                if (m_type == 2)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            
+            
+            
+                if (m_type == 3)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            }
         }
         
         private IEnumerator ShowTakeDamage()
