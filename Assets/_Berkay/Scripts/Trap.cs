@@ -14,7 +14,7 @@ namespace _Berkay.Scripts
                     return;
                 }
                 
-                playerHealthSystem.TakeDamage(100);
+                playerHealthSystem.TakeDamage(4);
             }
         }
     }
