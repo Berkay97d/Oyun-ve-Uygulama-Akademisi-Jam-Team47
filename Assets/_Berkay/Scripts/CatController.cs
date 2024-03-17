@@ -56,9 +56,7 @@ public class CatController : MonoBehaviour
     private void SetCatState(CatState c)
     {
         catState = c;
-
-        Debug.Log(c);
-
+        
         if (c == CatState.Idle)
         {
             _animator.SetBool("isWalking", false);
