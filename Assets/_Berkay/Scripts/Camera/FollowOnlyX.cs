@@ -23,4 +23,9 @@ public class FollowOnlyX : CinemachineExtension
             state.RawPosition = pos;
         }
     }
+
+    public void SetYPos(float pos)
+    {
+        m_YPosition = pos;
+    }
 }

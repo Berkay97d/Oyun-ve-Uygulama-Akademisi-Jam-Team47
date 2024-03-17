@@ -12,21 +12,30 @@ namespace _Berkay.Scripts
 
         private PlayerHealthSystem m_playerHealthSystem;
         private CharacterMovement m_characterMovement;
+        private PlayerAttacker m_playerAttacker;
         private bool isMoving;
 
         private void Start()
         {
             m_characterMovement = GetComponent<CharacterMovement>();
             m_playerHealthSystem = GetComponent<PlayerHealthSystem>();
+            m_playerAttacker = GetComponent<PlayerAttacker>();
             
             StartCoroutine(CheckIsMoving());
             
             m_playerHealthSystem.OnDeath += OnDeath;
+            m_playerAttacker.OnPlayerAttack += OnPlayerAttack;
+        }
+
+        private void OnPlayerAttack()
+        {
+            _animator.SetTrigger("onAttack");
         }
 
         private void OnDestroy()
         {
-            m_playerHealthSystem.OnDeath += OnDeath;
+            m_playerHealthSystem.OnDeath -= OnDeath;
+            m_playerAttacker.OnPlayerAttack -= OnPlayerAttack;
         }
 
         private void Update()
