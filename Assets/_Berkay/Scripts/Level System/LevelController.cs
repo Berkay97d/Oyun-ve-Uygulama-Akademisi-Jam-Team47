@@ -9,7 +9,6 @@ public class LevelController : MonoBehaviour
     [SerializeField] private LevelObject level1;
     [SerializeField] private LevelObject level2;
     [SerializeField] private LevelObject level3;
-    [SerializeField] private LevelObject level4;
     [SerializeField] private SceneLoadingShadow _sceneLoadingShadow;
     [SerializeField] private CatController _cat;
     
@@ -39,7 +38,6 @@ public class LevelController : MonoBehaviour
                 StartCoroutine(OnLevelCompleteRoutine(level2, level3));
                 break;
             case 3:
-                StartCoroutine(OnLevelCompleteRoutine(level3, level4));
                 break;
         }
     }

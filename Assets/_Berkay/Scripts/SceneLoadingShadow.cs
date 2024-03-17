@@ -17,12 +17,6 @@ public class SceneLoadingShadow : MonoBehaviour
     
     private void Update()
     {
-        if (left.sizeDelta.x < 0)
-        {
-            left.sizeDelta = new Vector2(0, left.sizeDelta.y);
-            right.sizeDelta = new Vector2(0, right.sizeDelta.y);    
-        }
-        
         CloseScene();
         OpenScene();
     }
@@ -32,6 +26,12 @@ public class SceneLoadingShadow : MonoBehaviour
         if (!isClosing)
         {
             return;
+        }
+        if (left.sizeDelta.x < 0)
+        {
+            left.sizeDelta = new Vector2(0, left.sizeDelta.y);
+            right.sizeDelta = new Vector2(0, right.sizeDelta.y);
+            s = 0;
         }
         
         s += Time.deltaTime;

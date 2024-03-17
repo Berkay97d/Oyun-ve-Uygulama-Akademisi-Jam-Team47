@@ -128,7 +128,9 @@ MonoBehaviour:
   _fireArea: {fileID: 9198677728192482660}
   _moveSpeed: 2
   _maxHealth: 3
-  _renderer: {fileID: 0}
+  _renderer: {fileID: 8084773159786249800}
+  animator: {fileID: 3659727511815546101}
+  m_type: 3
 --- !u!114 &9198677728192482660
 MonoBehaviour:
   m_ObjectHideFlags: 0

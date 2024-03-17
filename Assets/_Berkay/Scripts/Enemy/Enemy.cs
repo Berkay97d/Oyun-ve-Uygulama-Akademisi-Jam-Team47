@@ -23,10 +23,13 @@ namespace _Berkay.Scripts.Enemy
         [SerializeField] private float _moveSpeed;
         [SerializeField] private float _maxHealth;
         [SerializeField] private SpriteRenderer _renderer;
+        [SerializeField] private Animator animator;
+        [SerializeField] private int m_type;
         
         
         private float m_currentHealth;
-        
+
+        private bool isDead;
         private Player m_player;
         private EnemyState m_enemyState = EnemyState.Idle;
         
@@ -43,6 +46,43 @@ namespace _Berkay.Scripts.Enemy
 
         private void Update()
         {
+            if (isDead)
+            {
+                if (m_type == 1)
+                {
+                    transform.position = new Vector3(transform.position.x, -1.75f, transform.position.z);
+                }
+                StopAllCoroutines();
+                return;
+            }
+            
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                if (m_type == 1)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            }
+            
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                if (m_type == 2)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            }
+            
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                if (m_type == 3)
+                {
+                    isDead = true;
+                    animator.SetTrigger("dead");   
+                }
+            }
+            
             if (_enemySystem.GetPlayer() == null)
             {
                 return;
@@ -76,6 +116,12 @@ namespace _Berkay.Scripts.Enemy
         {
             while (true)
             {
+                if (isDead)
+                {
+                    Debug.Log("AAAAAAAA");
+                    yield break;
+                }
+                
                 var projectile = Instantiate(_projectile, _projectileExitPos.position, Quaternion.identity);
                 var direction = Vector3.Normalize(m_player.transform.position - transform.position); 
                 projectile.Fire(direction);
