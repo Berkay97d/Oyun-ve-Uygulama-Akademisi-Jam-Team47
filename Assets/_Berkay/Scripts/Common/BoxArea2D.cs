@@ -8,11 +8,13 @@ namespace _Berkay.Scripts.Common
     public class BoxArea2D : Area2D
     {
         [SerializeField] private bool _axisAligned;
+        [SerializeField] private float _x;
+        [SerializeField] private float _y;
         
 
         public Vector2 GetSize()
         {
-            return transform.lossyScale.Abs();
+            return new Vector2(_x,_y);
         }
 
         public float GetAngle()
